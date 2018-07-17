@@ -1,0 +1,22 @@
+body {
+}
+.navbar {
+  height: 40px;
+  cursor: pointer;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+.nav-button {
+  padding-left: 25px;
+  padding-right: 25px;
+  display: block;
+}
+
+.nav-button:hover {
+  color: grey !important;
+}
