@@ -1,0 +1,67 @@
+extend layout
+
+block content
+  .gallery
+    .container
+      .row
+        form(action="/" method="get")
+          input.img-button.pointer(type="submit" value="Retour à la page principale")
+      .row
+        .col-lg-3
+          .img-card
+            img(id="1" class="img-thumbnail" onclick="openModal();currentSlide(1)" src="/images/1.png")
+        .col-lg-3
+          .img-card
+            img(id="2" class="img-thumbnail" onclick="openModal();currentSlide(2)" src="/images/2.png")
+        .col-lg-3
+          .img-card
+            img(id="3" class="img-thumbnail" onclick="openModal();currentSlide(3)" src="/images/3.png")
+        .col-lg-3
+          .img-card
+            img(id="4" class="img-thumbnail" onclick="openModal();currentSlide(4)" src="/images/4.png")
+              
+
+        .col-lg-3
+          .img-card
+            img(id="5" class="img-thumbnail" onclick="openModal();currentSlide(5)" src="/images/5.png")
+        .col-lg-3
+          .img-card
+            img(id="6" class="img-thumbnail" onclick="openModal();currentSlide(6)" src="/images/6.png")
+        .col-lg-3
+          .img-card
+            img(id="7" class="img-thumbnail" onclick="openModal();currentSlide(7)" src="/images/7.jpg")
+        .col-lg-3
+          .img-card
+            img(id="8" class="img-thumbnail" onclick="openModal();currentSlide(8)" src="/images/8.jpg")
+
+        .col-lg-3
+          .img-card
+            img(id="9" class="img-thumbnail" onclick="openModal();currentSlide(9)" src="/images/9.jpg")
+        .col-lg-3
+          .img-card
+            img(id="10" class="img-thumbnail" onclick="openModal();currentSlide(10)" src="/images/10.jpg")
+        .col-lg-3
+          .img-card
+            img(id="11" class="img-thumbnail" onclick="openModal();currentSlide(11)" src="/images/11.png")
+        .col-lg-3
+          .img-card
+            img(id="12" class="img-thumbnail" onclick="openModal();currentSlide(12)" src="/images/12.jpg")
+      .row
+        .col-lg-9
+          .img-card
+            img(id="13" class="img-thumbnail exeption" onclick="openModal();currentSlide(13)" src="/images/13.jpg")
+      .row
+        form(action="/" method="get")
+          input.img-button.pointer(type="submit" value="Retour à la page principale")
+
+  div(id="myModal" class="modal")
+    .background
+    span(class="close cursor" onclick="closeModal()") &times;
+    div(class="modal-content")
+
+      div(class="mySlides")
+        div(class="numbertext")
+        img(id="imageid" src="/images/1.png" style="width:100%")
+    
+    a(class="prev" onclick="plusSlides(-1)") &#10094;
+    a(class="next" onclick="plusSlides(1)") &#10095;

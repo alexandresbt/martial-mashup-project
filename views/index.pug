@@ -1,3 +1,153 @@
 extends layout
 
 block content
+  .img(data-0="background-size: 100% auto;" data-300="background-size: 120% auto; position: fixed; top:0;")
+  .navbar#navbar
+    a.left.nav-button.pointer(onClick="Scroll(startpage)")
+      img.logo#logo(src="/images/logo2.png")
+    a.nav-button.pointer(onClick="Scroll(Presentation)") Présentation
+    a.nav-button.pointer(onClick="Scroll(Histoire)") Notre histoire
+    a.nav-button.pointer(onClick="Scroll(Membres)") Membres
+    a.nav-button.pointer(onClick="Scroll(Gallerie)") Gallerie
+    a.nav-button.pointer(onClick="Scroll(Experiences)") Expériences
+    a.nav-button.pointer(onClick="Scroll(Contact)") Contact
+  .screen#startpage
+    .title The Mashup Martial Project
+  .block  
+    .blocktext
+      .subtitle#Presentation Présentation
+      .text Le Mashup Martial Project consiste à la recherche, la création, 
+        |la diffusion et la présentation de chorégraphies d’arts martiaux artistiques.
+        |Cette vision artistique des arts martiaux mélange une forme gestuelle des arts 
+        |martiaux traditionnels vietnamiens, chorégraphiée avec des méthodes de danse et transcrit dans des univers différents. 
+        |L’objectif de ce projet est multiple. D’une part, le projet propose 
+        |une nouvelle forme d’expression au croisement de plusieurs arts et d’autre
+        | part il vise le partage et la transmission de cette nouvelle forme pour 
+        |chacun puisse se l’approprier et s’exprimer à travers elle.  Dans ce but 
+        |de partage, le Mashup Martial Project a construit également  une branche 
+        |associative pour pouvoir proposer une initiation et une formation à cette
+        | nouvelle forme d’expression qui s’ajoute à la |diffusion du projet sur internet.
+      .subtitle#Histoire Notre histoire
+      .text Comment est apparue cette idée de créer une nouvelle forme d’art martiaux artistiques ?
+        |<br><br>A l’origine, le Mashup Martial Project a été créée sous l’impulsion
+        | de deux frères, Antonin et Arthur Delorme, pratiquants d’arts martiaux 
+        |vietnamiens, soucieux de faire évoluer leur discipline vers des fins plus
+        | artistiques, encore peu développées de nos jours. Ils voulaient ainsi
+        | proposer une évolution différente de leur arts, qui laisse place à une
+        | plus grande liberté, une plus grande créativité et une plus grande
+        | association avec d’autres activités artistiques. 
+        |<br> Ils ont ainsi rassemblé autour d’eux des amis et avec eux ils ont pu 
+        |débuter le projet  par la création de chorégraphies, qui étaient par 
+        |la suite filmées et montées en courtes vidéos. Toutefois, soucieux de
+        | structurer leur action et de la partager avec d’autres, ils ont poursuivi
+        | leur action ajoutant une partie associative au projet.
+      .subtitle#Membres Membres
+      .text
+        .sub Membres fondateurs
+        .row
+          .person.col-lg-4
+            img(class="picture" src="/images/default.png")
+            .name Arthur Delorme
+            .description Artiste
+          .person.col-lg-4
+            img(class="picture" src="/images/default.png")
+            .name Antonin Delorme
+            .description Artiste
+          .person.col-lg-4
+            img(class="picture" src="/images/default.png")
+            .name Julien Chappuis
+            .description Cameraman
+        .sub Membres administratifs
+        .row
+          .person.col-lg-6
+            img(class="picture" src="/images/default.png")
+            .name Le saint Phillipe
+            .description Grand manipulateur
+          .person.col-lg-6
+            img(class="picture" src="/images/default.png")
+            .name Pascale Chiron
+            .description Secrétaire
+          .person.col-lg-6
+            img(class="picture" src="/images/default.png")
+            .name Franck Delorme
+            .description Trésorier
+          .person.col-lg-6
+            img(class="picture" src="/images/default.png")
+            .name Alex
+            .description Responsable graphique
+      .subtitle#Gallerie Gallerie
+      .row
+        .col-lg-4
+          .img-card
+            img(id="1" class="img-thumbnail" onclick="openModal();currentSlide(1)" src="/images/1.png")
+        .col-lg-4
+          .img-card
+            img(id="2" class="img-thumbnail" onclick="openModal();currentSlide(2)" src="/images/2.png")
+        .col-lg-4
+          .img-card
+            img(id="3" class="img-thumbnail" onclick="openModal();currentSlide(3)" src="/images/3.png")
+      .row
+        .col-lg-4
+          .img-card
+            img(id="4" class="img-thumbnail pointer" onclick="openModal();currentSlide(4)" src="/images/4.png")
+        .col-lg-4
+          .img-card
+            img(id="5" class="img-thumbnail pointer" onclick="openModal();currentSlide(5)" src="/images/5.png")
+        .col-lg-4
+          .img-card
+            img(id="6" class="img-thumbnail pointer" onclick="openModal();currentSlide(6)" src="/images/6.png")
+      .row
+        .col-lg-4
+          .img-card
+            img(id="7" class="img-thumbnail pointer" onclick="openModal();currentSlide(7)" src="/images/7.jpg")
+        .col-lg-4
+          .img-card
+            img(id="8" class="img-thumbnail pointer" onclick="openModal();currentSlide(8)" src="/images/8.jpg")
+        .col-lg-4
+          .img-card
+            img(id="9" class="img-thumbnail pointer" onclick="openModal();currentSlide(9)" src="/images/9.jpg")
+      .row
+        form(action="/gallery" method="get")
+          input.img-button.pointer(type="submit" value="Voir toutes les photos")
+
+      .subtitle#Experiences Expériences
+      .text
+        .sub Compétition
+        |Antonin Delorme : Champion de France d’arts martiaux  vietnamiens  2016, 2017, 2018
+        |<br> <br>Arthur Delorme : Champion de France  d’arts martiaux vietnamiens 2014, 2015, 2017, 2018, membre de l’équipe de France 2014 et médaillé d’argent et de bronze aux internationaux d’ Ho Chi Minh (2014)
+
+        .sub <br><br><br>Démonstration
+          .description participation en tant que membre d’autres associations
+        |• Démonstrations à la Nuit du Shaolin , le plus grand spectacle d’arts martiaux du grand sud ouest  ( de 2013 à 2016).
+        |<br> <br>• Galeries Lafayette de Toulouse (2015- 2018).
+        |<br> <br>• Parc des exposition de Toulouse, fête de la caisse d’épargne Midi-Pyrénées (2016). 
+        |<br> <br>• Arbre de Noel, Thales de Toulouse (2016).
+        |<br> <br>• Démonstrations au forum des associations (Brax, Blagnac, Pibrac, Aussonne).
+      .subtitle#Contact Contact
+      .text(style="text-align: center;") Mail : mashupmartial.project@gmail.com
+        |<br><br>Tel : +33 6 42 81 30 50
+        .row(style="justify-content: space-evenly;padding-top:50px;")
+          .dot.blue.pointer
+            img(src="/images/fb.png")
+            .a Mashup Martial Project
+          .dot.red.pointer
+            img(src="/images/youtube.png")
+            .a Mashup Martial Project
+          .dot.pink.pointer
+            img(src="/images/insta.png")
+            .a @Mashup Martial Project
+            
+  div(id="myModal" class="modal")
+    .background
+    span(class="close cursor" onclick="closeModal()") &times;
+    div(class="modal-content")
+
+      div(class="mySlides")
+        div(class="numbertext")
+        img(id="imageid" src="/images/1.png" style="width:100%")
+    
+    a(class="prev" onclick="plusSlides(-1)") &#10094;
+    a(class="next" onclick="plusSlides(1)") &#10095;
+
+block scripts
+  script(src="/js/scroll.js")
