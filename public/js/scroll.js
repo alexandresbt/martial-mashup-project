@@ -11,8 +11,7 @@ $(function() {
       if ($(this).scrollTop() > size) {
          nav.className += " changeColor";
          logo.src="/images/logo.png";
-      }
-      if ($(this).scrollTop() < size) {
+      }else if ($(this).scrollTop() <= size) {
          nav.classList.remove("changeColor");
          logo.src="/images/logo2.png";
       }
@@ -23,6 +22,12 @@ function Scroll(id) {
   id.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
+
 $(document).ready(function() {
-  var s = skrollr.init();
+  var size = $(window).width();
+  var limit = 1550;
+  console.log("salut !");
+  if (size > limit) {
+    var s = skrollr.init([smoothScrolling=true]);
+  }
 })

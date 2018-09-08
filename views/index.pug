@@ -10,17 +10,17 @@ block header
   meta(name="robots" content="index")
   
 block content
-  .img(data-0="background-size: 100% auto;" data-300="background-size: 120% auto; position: fixed; top:0;")
+  .img#mainimg(data-0="background-size: 100% auto;" data-300="background-size: 120% auto; position: fixed; top:0;")
   .navbar#navbar
-    a.left.nav-button.pointer(onClick="Scroll(startpage)")
+    a.nav-button.left.pointer(onClick="Scroll(startpage)")
       img.logo#logo(src="/images/logo2.png")
-    a.nav-button.pointer(onClick="Scroll(Presentation)") Présentation 
-    a.nav-button.pointer(onClick="Scroll(Histoire)") Notre histoire 
-    a.nav-button.pointer(onClick="Scroll(Experiences)") Expériences 
-    //a.nav-button.pointer(onClick="Scroll(Membres)") Membres 
-    a.nav-button.pointer(onClick="Scroll(Video)") Vidéo
-    a.nav-button.pointer(onClick="Scroll(Gallerie)") Gallerie 
-    a.nav-button.pointer(onClick="Scroll(Contact)") Contact 
+    .nav2
+      a.nav-button.pointer(onClick="Scroll(Presentation)") Présentation 
+      a.nav-button.pointer(onClick="Scroll(Histoire)") Notre histoire 
+      a.nav-button.pointer(onClick="Scroll(Experiences)") Expériences  
+      a.nav-button.pointer(onClick="Scroll(Video)") Vidéo
+      a.nav-button.pointer(onClick="Scroll(Gallerie)") Gallerie 
+      a.nav-button.pointer(onClick="Scroll(Contact)") Contact
   .screen#startpage
     .title.uppercase The Mashup Martial Project
     .useless
