@@ -1,0 +1,34 @@
+//.subtitle#Membres Membres
+//.text
+  .sub Membres fondateurs
+  .row
+    .person.col-lg-4
+      img(class="picture" src="/images/default.png")
+      .name Arthur Delorme
+      .description Artiste
+    .person.col-lg-4
+      img(class="picture" src="/images/default.png")
+      .name Antonin Delorme
+      .description Artiste
+    .person.col-lg-4
+      img(class="picture" src="/images/default.png")
+      .name Julien Chappuis
+      .description Cameraman
+  .sub Membres administratifs
+  .row
+    .person.col-lg-3
+      img(class="picture" src="/images/default.png")
+      .name Phillipe Sabathier
+      .description Président
+    .person.col-lg-3
+      img(class="picture" src="/images/default.png")
+      .name Pascale Chiron
+      .description Secrétaire
+    .person.col-lg-3
+      img(class="picture" src="/images/default.png")
+      .name Franck Delorme
+      .description Trésorier
+    .person.col-lg-3
+      img(class="picture" src="/images/default.png")
+      .name Alexandre Sabathier
+      .description Responsable graphique

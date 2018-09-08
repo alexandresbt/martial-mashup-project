@@ -1,19 +1,32 @@
 extends layout
 
+block header
+  meta(name="description" content="Le site officiel du groupe Mashup Martial Project")
+  meta(name="keywords" content="mashup, martial, project, mashupmartial, mashupmartialproject, 
+  Arthur, Antonin, Delorme, art, martiaux, vietnam, vietnamien, artsmartiauxvietnamiens, 
+  amv, Centre, Thieu, Lam, sport, cascade, danse, artistique, martialproject")
+  meta(name="author" content="Alexandre Sabathier")
+  meta(name="Rating" content="general")
+  meta(name="Distribution" content="global")
+  meta(name="Category" content="sports")
+  meta(name="robots" content="index")
+  
 block content
   .img(data-0="background-size: 100% auto;" data-300="background-size: 120% auto; position: fixed; top:0;")
   .navbar#navbar
     a.left.nav-button.pointer(onClick="Scroll(startpage)")
       img.logo#logo(src="/images/logo2.png")
-    a.nav-button.pointer(onClick="Scroll(Presentation)") Présentation
-    a.nav-button.pointer(onClick="Scroll(Histoire)") Notre histoire
-    a.nav-button.pointer(onClick="Scroll(Experiences)") Expériences
-    a.nav-button.pointer(onClick="Scroll(Membres)") Membres
-    a.nav-button.pointer(onClick="Scroll(Gallerie)") Gallerie
-    a.nav-button.pointer(onClick="Scroll(Contact)") Contact
+    a.nav-button.pointer(onClick="Scroll(Presentation)") Présentation 
+    a.nav-button.pointer(onClick="Scroll(Histoire)") Notre histoire 
+    a.nav-button.pointer(onClick="Scroll(Experiences)") Expériences 
+    //a.nav-button.pointer(onClick="Scroll(Membres)") Membres 
+    a.nav-button.pointer(onClick="Scroll(Video)") Vidéo
+    a.nav-button.pointer(onClick="Scroll(Gallerie)") Gallerie 
+    a.nav-button.pointer(onClick="Scroll(Contact)") Contact 
   .screen#startpage
-    .title The Mashup Martial Project
-    //img.logo2(src="/images/logo.png")
+    .title.uppercase The Mashup Martial Project
+    .useless
+      img.logo2(src="/images/logo2b.png")
   .block
     .blocktext
       img.img1(src="/images/8.2.jpg")
@@ -65,40 +78,10 @@ block content
           |<br> <br>Parc des exposition de Toulouse, 2016<br>fête de la caisse d’épargne Midi-Pyrénées 
           |<br> <br>Arbre de Noel, 2016<br>Thales de Toulouse
           |<br> <br>Démonstrations au forum des associations<br>Brax, Blagnac, Pibrac, Aussonne
-      .subtitle#Membres Membres
-      .text
-        .sub Membres fondateurs
-        .row
-          .person.col-lg-4
-            img(class="picture" src="/images/default.png")
-            .name Arthur Delorme
-            .description Artiste
-          .person.col-lg-4
-            img(class="picture" src="/images/default.png")
-            .name Antonin Delorme
-            .description Artiste
-          .person.col-lg-4
-            img(class="picture" src="/images/default.png")
-            .name Julien Chappuis
-            .description Cameraman
-        .sub Membres administratifs
-        .row
-          .person.col-lg-3
-            img(class="picture" src="/images/default.png")
-            .name Le saint Phillipe
-            .description Grand manipulateur
-          .person.col-lg-3
-            img(class="picture" src="/images/default.png")
-            .name Pascale Chiron
-            .description Secrétaire
-          .person.col-lg-3
-            img(class="picture" src="/images/default.png")
-            .name Franck Delorme
-            .description Trésorier
-          .person.col-lg-3
-            img(class="picture" src="/images/default.png")
-            .name Alex
-            .description Responsable graphique
+      .subtitle#Video Vidéo
+      .block1.center
+        iframe(width="888" height="500" src="https://www.youtube.com/embed/GVDL6R74lUk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+
       .subtitle#Gallerie Gallerie
       .row
         .taille3.img-card
@@ -127,13 +110,13 @@ block content
       .text(style="text-align: center;") Mail : mashupmartial.project@gmail.com
         |<br><br>Tel : +33 6 42 81 30 50
         .row(style="justify-content: space-evenly;padding-top:50px;")
-          .dot.blue.pointer
+          a.dot.blue.pointer(href="https://www.facebook.com/Mashup-Martial-Project-2665258763699727/" target="_blank")
             img(src="/images/fb.png")
             .a Mashup Martial Project
-          .dot.red.pointer
+          a.dot.red.pointer(href="https://www.youtube.com/channel/UCKethVV1nexScXsiSDa-avw" target="_blank")
             img(src="/images/youtube.png")
             .a Mashup Martial Project
-          .dot.pink.pointer
+          a.dot.pink.pointer(href="https://www.instagram.com/mashup_martial_project/" target="_blank")
             img(src="/images/insta.png")
             .a @Mashup Martial Project
             
