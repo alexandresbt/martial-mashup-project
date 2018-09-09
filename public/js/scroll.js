@@ -26,7 +26,6 @@ function Scroll(id) {
 $(document).ready(function() {
   var size = $(window).width();
   var limit = 1550;
-  console.log("salut !");
   if (size > limit) {
     var s = skrollr.init([smoothScrolling=true]);
   }
