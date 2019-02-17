@@ -20,7 +20,8 @@ block content
       a.nav-button.pointer(onClick="Scroll(Histoire)") Notre histoire 
       a.nav-button.pointer(onClick="Scroll(Experiences)") Expériences  
       a.nav-button.pointer(onClick="Scroll(Video)") Vidéo
-      a.nav-button.pointer(onClick="Scroll(Galerie)") Galerie 
+      a.nav-button.pointer(onClick="Scroll(sponsor)") Nos partenaires
+      a.nav-button.pointer(onClick="Scroll(Galerie)") Galerie
       a.nav-button.pointer(onClick="Scroll(Contact)") Contact
   .screen#startpage
     .title.uppercase The Mashup Martial Project
@@ -30,38 +31,49 @@ block content
     .blocktext
       img.img1(src="/images/8.2.jpg")
       .subtitle#Pres Présentation
-      .text
-        |Le Mashup Martial Project consiste à la recherche, la création, 
-        |la diffusion et la présentation de chorégraphies d’arts martiaux artistiques.
-        |Cette vision artistique des arts martiaux mélange une forme gestuelle des arts 
-        |martiaux traditionnels vietnamiens, chorégraphiée avec des méthodes de danse et transcrit dans des univers différents.<br><br>
-        |L’objectif de ce projet est multiple. D’une part, le projet propose 
-        |une nouvelle forme d’expression au croisement de plusieurs arts et d’autre 
-        |part il vise le partage et la transmission de cette nouvelle forme pour 
-        |que chacun puisse se l’approprier et s’exprimer à travers elle.  Dans ce but 
-        |de partage, le Mashup Martial Project a construit également  une branche 
-        |associative pour pouvoir proposer une initiation et une formation à cette
-        | nouvelle forme d’expression qui s’ajoute à la diffusion du projet sur internet.
+      h5.text
+        |Le Mashup Martial Project est un projet qui crée, présente et diffuse des
+        |chorégraphies d’arts martiaux artistiques.<br><br>
+        |Cette nouvelle approche mélange la gestuelle des arts martiaux traditionnels
+        |vietnamiens et les techniques chorégraphiques de danse. Elle permet de créer des univers
+        |visuels différents, transportant le spectateur dans un monde unique.<br><br>
+        |L’objectif de ce projet est multiple. Il propose d’une part une nouvelle forme
+        |d’expression au croisement de plusieurs disciplines. D’autre part, il s’appuie sur le
+        |partage et la transmission pour que chacun puisse s’approprier et s’exprimer à travers
+        |cette nouvelle forme d’art. Pour atteindre cet objectif, le Mashup Martial Project a
+        |ouvert une association dans le but d’offrir des initiations et des formations à cette
+        |nouvelle approche artistique. Cette offre complète la diffusion des créations du projet
+        |sur le site internet.<br><br><br>
+        |Le Mashup Martial Project consiste à rechercher, créer, diffuser, et présenter des
+        |chorégraphies d’arts martiaux artistiques. Cette vision artistique des arts martiaux
+        |mélange une forme gestuelle des arts martiaux traditionnels vietnamiens,
+        |chorégraphiée avec des méthodes de danse et transcrite dans des univers différents.<br><br>
+        |L’objectif de ce projet est multiple. D’une part, le projet propose une nouvelle forme
+        |d’expression au croisement de plusieurs arts et, d’autre part, il s’appuie sur le partage
+        |et la transmission de cette nouvelle forme pour que chacun puisse se l’approprier et
+        |s’exprimer à travers elle. Dans ce but, le Mashup Martial Project a mis en place
+        |également une branche associative pour offrir une initiation et une formation à cette
+        |nouvelle forme d’expression. Cette offre complète la diffusion des créations du projet
+        |sur le site internet.
       .subtitle#Histoire Notre histoire
-      .text
+      h5.text
         img.img2(src="/images/4.2.png")
-        |Comment est apparue cette idée de créer une nouvelle forme d’art martiaux artistiques ?
-        |<br><br>A l’origine, le Mashup Martial Project a été créée sous l’impulsion
-        | de deux frères, Antonin et Arthur Delorme, pratiquants d’arts martiaux 
-        |vietnamiens, soucieux de faire évoluer leur discipline vers des fins plus
-        | artistiques, encore peu développées de nos jours. Ils voulaient ainsi
-        | proposer une évolution différente de leur arts, qui laisse place à une
-        | plus grande liberté, une plus grande créativité et une plus grande
-        | association avec d’autres activités artistiques. 
-        |<br> Ils ont ainsi rassemblé autour d’eux des amis et avec eux ils ont pu 
-        |débuter le projet  par la création de chorégraphies, qui étaient par 
-        |la suite filmées et montées en courtes vidéos. Toutefois, soucieux de
-        | structurer leur action et de la partager avec d’autres, ils ont poursuivi
-        | leur action ajoutant une partie associative au projet.
+        |Comment est apparue cette idée de créer une nouvelle forme d’arts
+        |martiaux artistiques ?<br><br>
+        |A l’origine, le Mashup Martial Project a été créé sous l’impulsion de deux frères,
+        |Antonin et Arthur Delorme, pratiquants d’arts martiaux vietnamiens, soucieux de
+        |faire évoluer leur discipline vers des fins plus artistiques, encore peu développées de
+        |nos jours.<br><br>
+        |lls voulaient ainsi proposer une évolution différente de leur pratique ; avec une place
+        |plus importante pour la liberté, la créativité et le mélange d’activités artistiques. 
+        |Ils ont ainsi rassemblé autour d’eux des amis, avec lesquels ils ont pu débuter le projet
+        |par la création de chorégraphies, filmées et montées en courtes vidéos. Toutefois,
+        |soucieux de structurer leur action et de la partager avec d’autres, ils ont ajouter une
+        |partie associative au projet.
       .subtitle#Experiences Expériences
       .row
         img.img3(src="/images/12.2.jpg")
-        .text.center(style="padding-right:80px;padding-left:60px;")
+        h5.text.center(style="padding-right:80px;padding-left:60px;")
           //.col-lg-6
           .sub Compétition
           strong Antonin Delorme
@@ -82,6 +94,11 @@ block content
       .video-container
         iframe(class="center-me" width="80%" src="https://www.youtube.com/embed/GVDL6R74lUk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
 
+      .subtitle#sponsor Nos Partenaires
+      .row.padding-top-100
+        img(src="/images/sponsor1.jpg")
+      .row
+        a.text-sponsor.pointer(href="https://activus-services.com/" target="_blank") Voir le site internet
       .subtitle#Galerie Galerie
       .row
         .taille3.img-card
@@ -107,7 +124,7 @@ block content
           input.img-button.pointer(type="submit" value="Voir toutes les photos")
 
       .subtitle#Contact Contact
-      .text(style="text-align: center;") Mail : mashupmartial.project@gmail.com
+      h5.text(style="text-align: center;") Mail : mashupmartial.project@gmail.com
         |<br><br>Tel : +33 6 42 81 30 50
         .row(style="justify-content: space-evenly;padding-top:50px;")
           a.dot.blue.pointer(href="https://www.facebook.com/Mashup-Martial-Project-2665258763699727/" target="_blank")

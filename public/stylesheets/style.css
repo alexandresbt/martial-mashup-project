@@ -7,6 +7,16 @@ body {
   filter: contrast(110%);
 }*/
 
+.padding-top-100{
+  padding-top: 100px;
+}
+
+.text-sponsor {
+  margin-top: 20px;
+  /*padding-bottom: 100px;*/
+  color: white;
+  text-align: justify;
+}
 .logo {
   max-height: 50px;
   transition: all 0.3s;
