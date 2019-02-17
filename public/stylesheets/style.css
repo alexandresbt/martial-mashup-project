@@ -79,7 +79,7 @@ body {
   margin-top: 5px;
   display: block;
   transition: 0.3s all;
-  font-size: 17px;
+  /*font-size: 17px;*/
 }
 .nav-button:before {
   content: "";
