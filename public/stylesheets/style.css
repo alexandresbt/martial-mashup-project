@@ -31,7 +31,16 @@ body {
   background-size: cover;
   background-position: center center;
 }
-
+.img-phone {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  background: url("/images/main2.png") no-repeat;
+ -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -67,6 +76,7 @@ body {
   padding-right: 10px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 5px;
   display: block;
   transition: 0.3s all;
   font-size: 17px;

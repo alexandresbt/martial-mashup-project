@@ -28,5 +28,11 @@ $(document).ready(function() {
   var limit = 1250;
   if (size > limit) {
     var s = skrollr.init([smoothScrolling=true]);
+  }else {
+    var img = document.getElementById("mainimg");
+    console.log("salut");
+    
+    img.classList.remove("img");
+    img.className += "img-phone";;
   }
 })
