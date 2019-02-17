@@ -12,10 +12,10 @@ block header
   
 block content
   .img#mainimg(data-0="background-size: 100% auto;" data-300="background-size: 120% auto; position: fixed; top:0;")
-  .navbar#navbar
+  h5.row.navbar#navbar
     a.nav-button.left.pointer(onClick="Scroll(startpage)")
       img.logo#logo(src="/images/logo2.png")
-    .nav2
+    .row.nav2
       a.nav-button.pointer(onClick="Scroll(Pres)") Présentation 
       a.nav-button.pointer(onClick="Scroll(Histoire)") Notre histoire 
       a.nav-button.pointer(onClick="Scroll(Experiences)") Expériences  
@@ -140,7 +140,7 @@ block content
   div(id="myModal" class="modal")
     .background
     span(class="close cursor" onclick="closeModal()") &times;
-    div(class="modal-content")
+    div(class="modal-content row")
 
       div(class="mySlides")
         div(class="numbertext")
