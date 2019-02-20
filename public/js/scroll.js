@@ -24,15 +24,18 @@ function Scroll(id) {
 
 
 $(document).ready(function() {
-  var size = $(window).width();
+  var width = $(window).width();
   var limit = 1250;
-  if (size > limit) {
+  if (width > limit) {
     var s = skrollr.init([smoothScrolling=true]);
   }else {
     var img = document.getElementById("mainimg");
     console.log("salut");
-    
     img.classList.remove("img");
     img.className += "img-phone";;
   }
+})
+
+$("#btn1, #btn2, #btn3, #btn4, #btn5, #btn6, #btn7").click(function() {
+  document.getElementById('scroll').click();
 })
