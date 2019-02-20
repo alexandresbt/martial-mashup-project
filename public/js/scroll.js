@@ -1,6 +1,7 @@
 
 if ($(window).scrollTop() > $(window).height()) {
   document.getElementById("navbar").className += " changeColor";
+  document.getElementById("logo").src="/images/logo.png";
 }
 
 $(function() {
@@ -8,10 +9,10 @@ $(function() {
      var size = $(window).height();
      var nav = document.getElementById("navbar");
      var logo = document.getElementById("logo");
-      if ($(this).scrollTop() > size) {
+      if ($(this).scrollTop() > size && !nav.classList.contains("changeColor")) {
          nav.className += " changeColor";
          logo.src="/images/logo.png";
-      }else if ($(this).scrollTop() <= size) {
+      }else if ($(this).scrollTop() <= size && nav.classList.contains("changeColor")) {
          nav.classList.remove("changeColor");
          logo.src="/images/logo2.png";
       }
@@ -30,12 +31,14 @@ $(document).ready(function() {
     var s = skrollr.init([smoothScrolling=true]);
   }else {
     var img = document.getElementById("mainimg");
-    console.log("salut");
     img.classList.remove("img");
     img.className += "img-phone";;
   }
 })
 
 $("#btn1, #btn2, #btn3, #btn4, #btn5, #btn6, #btn7").click(function() {
-  document.getElementById('scroll').click();
+  if ($('#scroll:visible').length != 0){
+    console.log("salu2");
+    document.getElementById('scroll').click();
+  }
 })
