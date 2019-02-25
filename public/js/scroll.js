@@ -10,10 +10,13 @@ $(function() {
      var nav = document.getElementById("navbar");
      var logo = document.getElementById("logo");
       if ($(this).scrollTop() > size && !nav.classList.contains("changeColor")) {
-         nav.className += " changeColor";
-         logo.src="/images/logo.png";
+        nav.classList.remove("navbar-dark");
+        nav.className += " changeColor navbar-light";
+        logo.src="/images/logo.png";
       }else if ($(this).scrollTop() <= size && nav.classList.contains("changeColor")) {
          nav.classList.remove("changeColor");
+         nav.classList.remove("navbar-light");
+         nav.className += " navbar-dark";
          logo.src="/images/logo2.png";
       }
    });
